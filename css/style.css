@@ -3,12 +3,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; }
+  height: 100vh;
+  color: white; }
 
 .meme_container {
   display: flex;
   flex-direction: column;
-  border: 1px solid black; }
+  padding: 25px;
+  background-color: black;
+  border-radius: 10px; }
 
 .meme_input {
   visibility: hidden; }
@@ -51,13 +54,13 @@
   align-items: center; }
 
 .meme_tab_title:hover > .meme_content > .meme_img {
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 300px;
   transition: 500ms ease; }
 
 .meme_input:checked ~ .meme_content > .meme_img {
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 300px;
   transition: 500ms ease; }
 
 /*# sourceMappingURL=style.css.map */
