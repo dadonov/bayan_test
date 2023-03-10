@@ -79,4 +79,24 @@ body {
   opacity: 1;
   transition: 500ms ease; }
 
+.fa-chevron-down {
+  display: inline-block;
+  color: black; }
+
+.meme_radio:checked + .fa-chevron-down {
+  transition: 500ms ease;
+  transform: rotate(180deg); }
+
+.meme_radio_label:has(.meme_radio:checked) p {
+  transition: 500ms ease;
+  color: red; }
+
+.meme_container:has(.meme_radio_label:hover) .fa-chevron-down {
+  color: white;
+  transition: 500ms ease; }
+
+.meme_container:has(.meme_radio_label:hover) p {
+  transition: 500ms ease;
+  color: red; }
+
 /*# sourceMappingURL=style.css.map */
