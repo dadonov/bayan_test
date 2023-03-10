@@ -1,0 +1,85 @@
+@import "normalize.css";
+
+.memes_container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.memes {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+}
+.meme_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0px; /* change all the pixels to relative */
+  background-color: black;
+  /* padding: 15%; */
+  transition: 500ms linear;
+}
+.meme1 {
+  width: 0;
+  height: 0;
+  background-image: url(/assets/meme1.png);
+  background-position: center;
+  background-size: contain;
+}
+.meme2 {
+  width: 0;
+  height: 0;
+  background-image: url(/assets/meme2.jpg);
+  background-position: center;
+  background-size: contain;
+}
+.meme3 {
+  width: 0;
+  height: 0;
+  background-image: url(/assets/meme3.png);
+  background-position: center;
+  background-size: contain;
+}
+.meme4 {
+  width: 0;
+  height: 0;
+  background-image: url(/assets/meme4.png);
+  background-position: center;
+  background-size: contain;
+}
+
+.meme_title {
+  font-size: 25px;
+  height: 50px;
+  background-color: whitesmoke;
+  background-position: center;
+  background-size: contain;
+}
+.meme_input:checked ~ .meme_content {
+  height: 250px;
+  transition: 500ms ease-in-out;
+}
+.meme_input:checked ~ .meme_content > .meme_img {
+  width: 100px;
+  height: 100px;
+}
+
+.meme_title:hover ~ .meme_content {
+  height: 250px;
+  transition: 500ms ease-in-out;
+}
+.meme_input:hover ~ .meme_content>.meme_img{
+  width: 100px;
+  height: 100px;
+  transition: 1000ms ease-in-out;
+
+}
+
+.meme_title:focus ~ .meme_content {
+  height: 250px;
+  transition: 500ms ease-in-out;
+}
